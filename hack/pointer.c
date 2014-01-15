@@ -10,8 +10,7 @@ int main(){
 	increment2(a);
 	printf("a ist immer noch %d\n jetzt mit pointer", a);
 	increment(b);
-	printf("\n\na ist jetzt %d\n", a);
-
+	printf("\n\na ist jetzt %d\n", a);		
 
 	return 0;
 
