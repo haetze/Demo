@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+//comment
 struct Point{
 	int x;
 	int y;
