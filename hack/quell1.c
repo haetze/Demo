@@ -7,7 +7,4 @@ int main(){
 	pr(i);
 	return 0;
 
-
-
-
 }
