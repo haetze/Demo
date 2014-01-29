@@ -3,7 +3,7 @@
 
 
 int main(void){
-        FILE *fp = fopen("test", "rw+"); // for unix test.txt
+        FILE *fp = fopen("data.txt", "r+"); // for unix test.txt
         if(fp == NULL)
                 printf("\nERROR\n");
         else{
@@ -14,6 +14,5 @@ int main(void){
                 fputs("hallo\n", fp);
                 
         }  
-        system("PAUSE");	
         return 0;
 }

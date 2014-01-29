@@ -11,9 +11,9 @@ int main (int argc, char** argv){
         int n1, n2;
         FILE* fp;
         char str[1000];
-        fp = fopen("data", "rw+"); // for unix data.txt
-        if(argc == 1){
-                sqr[0].laenge = 12;
+        fp = fopen("data.txt", "r+"); // for unix data.txt
+        if(argc == 2){
+                sqr[0].laenge = atoi(argv[1]);
                 n1 = fwrite(sqr, sizeof(RECT), 100, fp);
                 if(n1== 100)
                         printf("all written down\n\n");
@@ -21,8 +21,8 @@ int main (int argc, char** argv){
                         printf("we had a problem\nonly %d elements were written\n", n1);
                 
                 fclose(fp);
-        }else if(argc == 2){
-                fopen("data", "rw+");
+        }else if(argc == 1){
+                fopen("datai.txt", "r+");
                 RECT rec[100];
                 n2 = fread(rec, sizeof(RECT), 100, fp);
                 if(n2 == 100)
@@ -31,7 +31,6 @@ int main (int argc, char** argv){
                         printf("we had a problem");
 
         }
-        system("Pause");
         return 0;
 
 
