@@ -7,8 +7,8 @@
 int main(int argc, char * argv[])
 {
     /*Spawn a child to run the program.*/
-    char *argv2[]={"gofmt", argv[1], argv[2],  NULL};
-    execv( "/usr/local/go/bin/gofmt" ,argv2);
+    char *argv2[]={"elinks", argv[1], argv[2],  NULL};
+    execv( "/usr/local/Cellar/elinks/0.11.7/bin/elinks" ,argv2);
     //exit(127); /* only if execv fails */
         return 0;
 }
