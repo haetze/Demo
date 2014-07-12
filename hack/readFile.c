@@ -3,7 +3,7 @@
 
 
 int main(void){
-        FILE *fp = fopen("test.txt", "r+"); // for unix test.txt
+        FILE *fp = fopen("test.txt", "w+"); // for unix test.txt
         if(fp == NULL)
                 printf("\nERROR\n");
         else{
