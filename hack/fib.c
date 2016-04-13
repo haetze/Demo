@@ -1,16 +1,22 @@
-#include <stdio.h>
+#include "stdio.h"
+#include "stdlib.h"
 
-int fib (int n){
-	if(n<=1)
-		return n;
-	return fib(n-1)+fib(n-2);
+int fib(int);
+
+int main(int argc, char ** argv){
+  
+  printf("%d\n", fib(atoi(argv[1])));
 }
 
 
-int main(int argc, char *argv[]){
-	int n = fib(atoi(argv[1]));
-	printf("%d\n", n);
-	return 0;
+int fib(int n){
+  int a = 0, b = 1;
 
+  for(int i = 0; i < n; i++){
+    int tmp = a;
+    a = b;
+    b = tmp + b;
+  }
 
+  return a;
 }
