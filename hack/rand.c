@@ -4,10 +4,9 @@
 int main(){
 	srand(time(NULL));
 	int r;
-	while(0==0){
+	for(int i = 0; i < 10000; i++){
 		r = rand();
 		printf("\n%d", r);
-		sleep(1);
 	}
 	return 0;
 }
